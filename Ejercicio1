@@ -1,0 +1,21 @@
+a = float(input("Cual es el valor del termino a: "))
+b = float(input("Cual es el valor del termino b: "))
+c = float(input("Cual es el valor del termino c: "))
+
+dis= (b**2)-4*a*c
+
+while (dis<0):
+  print("Error el discriminante tiene que ser positivo")
+  a = float(input("Cual es el valor del termino a: "))
+  b = float(input("Cual es el valor del termino b: "))
+  c = float(input("Cual es el valor del termino c: "))
+  dis= (b**2)-4*a*c
+     
+if dis==0:
+    x= -b/(2*a)
+    print("X solo tiene una solucion = ",x)
+else: 
+    x1= (-b+(dis**0.5))/(2*a)
+    x2= (-b-(dis**0.5))/(2*a)
+    print("La primer solucion de X =",x1)
+    print("La segunda solucion de X =",x2)
